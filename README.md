@@ -197,3 +197,17 @@ What changes with this direction:
 - Faster adapter updates when search/social platforms change.
 
 See `docs/open-source-operating-model.md` for architecture and governance details.
+
+
+## 12) Suggested deployment arenas
+
+To run this reliably as an open-source product that reacts quickly to search/social updates, use multiple deployment arenas:
+
+1. Local Developer
+2. Preview (per PR)
+3. Shared Staging
+4. Canary Production
+5. General Production
+6. Hotfix (core update response)
+
+Full details and platform options are documented in `docs/deployment-arenas.md`.
