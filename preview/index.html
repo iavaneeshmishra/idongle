@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Growth Copilot Preview</title>
+    <style>
+      :root {
+        --bg: #0b1020;
+        --panel: #151d37;
+        --muted: #9aa7ca;
+        --text: #eaf0ff;
+        --accent: #5b8cff;
+        --good: #38d39f;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+        background: radial-gradient(circle at top right, #1c2850, var(--bg));
+        color: var(--text);
+      }
+      .wrap { max-width: 1100px; margin: 0 auto; padding: 28px; }
+      h1 { margin: 0 0 8px; font-size: 2rem; }
+      .sub { color: var(--muted); margin-bottom: 26px; }
+      .grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+      .card {
+        background: linear-gradient(180deg, #1b2548, var(--panel));
+        border: 1px solid #26305c;
+        border-radius: 14px;
+        padding: 14px;
+      }
+      .metric { font-size: 1.6rem; font-weight: 700; }
+      .label { color: var(--muted); font-size: 0.85rem; }
+      .delta { color: var(--good); font-size: 0.85rem; }
+      .section { margin-top: 18px; display: grid; grid-template-columns: 2fr 1fr; gap: 14px; }
+      .row { display: flex; justify-content: space-between; margin: 10px 0; }
+      .chip { padding: 2px 8px; border: 1px solid #3650a3; border-radius: 999px; color: #9ec0ff; font-size: 0.75rem; }
+      .bar { height: 9px; border-radius: 999px; background: #2a365f; overflow: hidden; margin-top: 8px; }
+      .fill { height: 100%; background: linear-gradient(90deg, #4a7bff, #7da1ff); }
+      ul { padding-left: 18px; margin: 8px 0 0; }
+      li { margin: 8px 0; }
+      .cta { margin-top: 22px; display: flex; gap: 10px; }
+      button {
+        border: none;
+        background: var(--accent);
+        color: white;
+        border-radius: 10px;
+        padding: 10px 14px;
+        font-weight: 600;
+      }
+      .ghost { background: transparent; border: 1px solid #3954ab; color: #b8ccff; }
+      @media (max-width: 900px) {
+        .grid { grid-template-columns: repeat(2, 1fr); }
+        .section { grid-template-columns: 1fr; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <h1>AI Growth Copilot — Build Preview</h1>
+      <div class="sub">Open-source demo UI for Shopify merchants using AI-powered SEM + SMM workflows.</div>
+
+      <div class="grid">
+        <div class="card"><div class="label">7D Revenue Attributed</div><div class="metric">$24,980</div><div class="delta">+18.4%</div></div>
+        <div class="card"><div class="label">Blended ROAS</div><div class="metric">3.7x</div><div class="delta">+0.6x</div></div>
+        <div class="card"><div class="label">Google Search Spend</div><div class="metric">$4,220</div><div class="label">Top theme: "organic skincare"</div></div>
+        <div class="card"><div class="label">Meta Spend</div><div class="metric">$2,950</div><div class="label">Best ad: UGC hook #3</div></div>
+      </div>
+
+      <div class="card" style="margin-top: 18px;">
+        <div class="row"><strong>Search Core Update Watch</strong><span class="chip">Open source feed</span></div>
+        <div class="label">Latest normalized update: Core ranking systems refinement</div>
+        <div class="row"><span>Merchant relevance</span><span>High (82/100)</span></div>
+        <div class="bar"><div class="fill" style="width:82%"></div></div>
+        <ul>
+          <li>Action 1: Improve collection page helpful content depth for top 5 revenue categories.</li>
+          <li>Action 2: Validate product schema coverage and freshness on high-traffic PDPs.</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <div class="card">
+          <div class="row"><strong>AI Recommendations</strong><span class="chip">This week</span></div>
+          <ul>
+            <li>Increase budget <strong>+15%</strong> on "non-toxic face serum" search ad group.</li>
+            <li>Pause 2 underperforming broad match keywords with CPA above target by 27%.</li>
+            <li>Post 3 short-form videos from the generated social calendar (Tue/Thu/Sat).</li>
+            <li>Launch retargeting copy variant "before/after results" for cart abandoners.</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <strong>Channel Mix</strong>
+          <div class="row"><span>Google Ads</span><span>56%</span></div>
+          <div class="bar"><div class="fill" style="width:56%"></div></div>
+          <div class="row"><span>Meta Ads</span><span>31%</span></div>
+          <div class="bar"><div class="fill" style="width:31%"></div></div>
+          <div class="row"><span>Organic Social</span><span>13%</span></div>
+          <div class="bar"><div class="fill" style="width:13%"></div></div>
+        </div>
+      </div>
+
+      <div class="cta">
+        <button>Generate SEM Draft</button>
+        <button class="ghost">Create 14-Day SMM Calendar</button>
+      </div>
+    </div>
+  </body>
+</html>
