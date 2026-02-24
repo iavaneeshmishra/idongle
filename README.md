@@ -187,11 +187,11 @@ Then open: `http://localhost:4173`
 
 ## 11) Open source direction (new)
 
-Given that search engine marketing performance is heavily affected by core algorithm and policy updates, this project is now explicitly designed as an **open-source product** so the community can adapt quickly.
+Given that both search engine marketing and social media marketing performance are heavily affected by algorithm and policy updates, this project is now explicitly designed as an **open-source product** so the community can adapt quickly.
 
 What changes with this direction:
 
-- Core-update monitoring becomes a first-class subsystem.
+- Search + social update monitoring become first-class subsystems.
 - Recommendation logic is transparent and community-reviewable.
 - Merchants can self-host and audit AI recommendation behavior.
 - Faster adapter updates when search/social platforms change.
